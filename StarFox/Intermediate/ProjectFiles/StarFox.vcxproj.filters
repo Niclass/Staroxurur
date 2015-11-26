@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\StarFox.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{D1436E9E-A386-4A25-A544-DD33CB0489E8}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\StarFox.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\StarFoxEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{F5461619-04E3-44D2-B4FF-6616954D4950}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\StarFox">
+			<UniqueIdentifier>{58F0C2BF-017B-4775-9664-DCF3BED0AA2F}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\StarFox\PawnWithCamera.cpp">
+			<Filter>Source\StarFox</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\StarFox\PawnWithCamera.h">
+			<Filter>Source\StarFox</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\StarFox\StarFox.Build.cs">
+			<Filter>Source\StarFox</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\StarFox\StarFox.cpp">
+			<Filter>Source\StarFox</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\StarFox\StarFox.h">
+			<Filter>Source\StarFox</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\StarFox\StarFoxGameMode.cpp">
+			<Filter>Source\StarFox</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\StarFox\StarFoxGameMode.h">
+			<Filter>Source\StarFox</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
