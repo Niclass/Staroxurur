@@ -9,6 +9,10 @@
 #include "StarFox.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeStarFox() {}
+	void ACrosshair::StaticRegisterNativesACrosshair()
+	{
+	}
+	IMPLEMENT_CLASS(ACrosshair, 1166946275);
 	void APawnWithCamera::StaticRegisterNativesAPawnWithCamera()
 	{
 	}
@@ -19,17 +23,54 @@ void EmptyLinkFunctionForGeneratedCodeStarFox() {}
 	IMPLEMENT_CLASS(AStarFoxGameMode, 3441142937);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
+	STARFOX_API class UClass* Z_Construct_UClass_ACrosshair_NoRegister();
+	STARFOX_API class UClass* Z_Construct_UClass_ACrosshair();
 	STARFOX_API class UClass* Z_Construct_UClass_APawnWithCamera_NoRegister();
 	STARFOX_API class UClass* Z_Construct_UClass_APawnWithCamera();
 	STARFOX_API class UClass* Z_Construct_UClass_AStarFoxGameMode_NoRegister();
 	STARFOX_API class UClass* Z_Construct_UClass_AStarFoxGameMode();
 	STARFOX_API class UPackage* Z_Construct_UPackage_StarFox();
+	UClass* Z_Construct_UClass_ACrosshair_NoRegister()
+	{
+		return ACrosshair::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ACrosshair()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AHUD();
+			Z_Construct_UPackage_StarFox();
+			OuterClass = ACrosshair::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x2090028C;
+
+
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Rendering Actor Input Replication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Crosshair.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Crosshair.h"));
+				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ACrosshair(Z_Construct_UClass_ACrosshair, TEXT("ACrosshair"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ACrosshair);
 	UClass* Z_Construct_UClass_APawnWithCamera_NoRegister()
 	{
 		return APawnWithCamera::StaticClass();
@@ -138,8 +179,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/StarFox")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xFBE46F02;
-			Guid.B = 0x98FD2DF3;
+			Guid.A = 0x4A7E7624;
+			Guid.B = 0xCFFC610D;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

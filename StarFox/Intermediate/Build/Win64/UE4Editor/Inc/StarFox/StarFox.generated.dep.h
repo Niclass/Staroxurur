@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef STARFOX_Crosshair_generated_h
+	#include "Crosshair.h"
+#endif
 #ifndef STARFOX_PawnWithCamera_generated_h
 	#include "PawnWithCamera.h"
 #endif

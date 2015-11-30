@@ -30,26 +30,16 @@ protected:
 	UCameraComponent* OurCamera;
 
 	UPROPERTY(EditAnywhere)
-		USphereComponent* CollisionSphere;
-
-	
+		USphereComponent* CollisionSphere;	
 
 	//Input variables
 	FVector2D MovementInput;
 	FVector CameraInput;
 	
-
 	void MoveForward(float AxisValue);
 	void PitchCamera(float AxisValue);
 	void YawCamera(float AxisValue);
 
-	
-	
-
-
-	// Begin APawn overrides
-	//	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override; // Allows binding actions/axes to functions
-	// End APawn overrides
 
 	/** Bound to the thrust axis */
 	void ThrustInput(float Val);
