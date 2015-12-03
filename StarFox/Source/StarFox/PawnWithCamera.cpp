@@ -14,7 +14,7 @@ APawnWithCamera::APawnWithCamera()
 	
 	CollisionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("RootComponent"));
 	CollisionSphere->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
-	CollisionSphere->InitSphereRadius(15.0f);
+	CollisionSphere->InitSphereRadius(16.0f);
 	CollisionSphere->SetCollisionProfileName(TEXT("Pawn"));
 	RootComponent = CollisionSphere;
 	
