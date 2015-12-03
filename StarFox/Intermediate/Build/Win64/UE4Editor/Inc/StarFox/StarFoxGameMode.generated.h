@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STARFOX_StarFoxGameMode_generated_h
 
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_RPC_WRAPPERS
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_INCLASS_NO_PURE_DECLS \
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_RPC_WRAPPERS
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAStarFoxGameMode(); \
 	friend STARFOX_API class UClass* Z_Construct_UClass_AStarFoxGameMode(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AStarFoxGameMode*>(this); }
 
 
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_INCLASS \
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_INCLASS \
 	private: \
 	static void StaticRegisterNativesAStarFoxGameMode(); \
 	friend STARFOX_API class UClass* Z_Construct_UClass_AStarFoxGameMode(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AStarFoxGameMode*>(this); }
 
 
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_STANDARD_CONSTRUCTORS \
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AStarFoxGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AStarFoxGameMode) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_ENHANCED_CONSTRUCTORS \
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AStarFoxGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,23 +61,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AStarFoxGameMode); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AStarFoxGameMode)
 
 
-#define StarFox_Source_StarFox_StarFoxGameMode_h_11_PROLOG
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_GENERATED_BODY_LEGACY \
+#define StarFox_Source_StarFox_StarFoxGameMode_h_9_PROLOG
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	StarFox_Source_StarFox_StarFoxGameMode_h_14_RPC_WRAPPERS \
-	StarFox_Source_StarFox_StarFoxGameMode_h_14_INCLASS \
-	StarFox_Source_StarFox_StarFoxGameMode_h_14_STANDARD_CONSTRUCTORS \
+	StarFox_Source_StarFox_StarFoxGameMode_h_12_RPC_WRAPPERS \
+	StarFox_Source_StarFox_StarFoxGameMode_h_12_INCLASS \
+	StarFox_Source_StarFox_StarFoxGameMode_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define StarFox_Source_StarFox_StarFoxGameMode_h_14_GENERATED_BODY \
+#define StarFox_Source_StarFox_StarFoxGameMode_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	StarFox_Source_StarFox_StarFoxGameMode_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	StarFox_Source_StarFox_StarFoxGameMode_h_14_INCLASS_NO_PURE_DECLS \
-	StarFox_Source_StarFox_StarFoxGameMode_h_14_ENHANCED_CONSTRUCTORS \
+	StarFox_Source_StarFox_StarFoxGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	StarFox_Source_StarFox_StarFoxGameMode_h_12_INCLASS_NO_PURE_DECLS \
+	StarFox_Source_StarFox_StarFoxGameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

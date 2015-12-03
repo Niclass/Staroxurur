@@ -20,7 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeStarFox() {}
 	void AStarFoxGameMode::StaticRegisterNativesAStarFoxGameMode()
 	{
 	}
-	IMPLEMENT_CLASS(AStarFoxGameMode, 3441142937);
+	IMPLEMENT_CLASS(AStarFoxGameMode, 2708316135);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
@@ -29,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodeStarFox() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	UMG_API class UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 
 	STARFOX_API class UClass* Z_Construct_UClass_ACrosshair_NoRegister();
 	STARFOX_API class UClass* Z_Construct_UClass_ACrosshair();
@@ -155,6 +156,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x2090028C;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CurrentWidget = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentWidget"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CurrentWidget, AStarFoxGameMode), 0x0000000000000000, Z_Construct_UClass_UUserWidget_NoRegister());
+				UProperty* NewProp_HUDWidgetClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("HUDWidgetClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(HUDWidgetClass, AStarFoxGameMode), 0x0004000000010001, Z_Construct_UClass_UUserWidget_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -163,6 +168,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("StarFoxGameMode.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("StarFoxGameMode.h"));
 				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+				MetaData->SetValue(NewProp_CurrentWidget, TEXT("ModuleRelativePath"), TEXT("StarFoxGameMode.h"));
+				MetaData->SetValue(NewProp_HUDWidgetClass, TEXT("Category"), TEXT("StarFoxGameMode"));
+				MetaData->SetValue(NewProp_HUDWidgetClass, TEXT("ModuleRelativePath"), TEXT("StarFoxGameMode.h"));
 #endif
 			}
 		}
@@ -179,7 +187,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/StarFox")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x4A7E7624;
+			Guid.A = 0xC6D565D4;
 			Guid.B = 0xCFFC610D;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
